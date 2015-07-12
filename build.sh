@@ -1,7 +1,8 @@
 #!/bin/sh
 
 # Get your current host nvidia driver version, e.g. 340.24
-nvidia_version=$(cat /proc/driver/nvidia/version | head -n 1 | awk '{ print $8 }')
+#nvidia_version=$(cat /proc/driver/nvidia/version | head -n 1 | awk '{ print $8 }')
+nvidia_version=340.65
 
 # We must use the same driver in the image as on the host
 if test ! -f nvidia-driver.run; then
