@@ -1,5 +1,7 @@
 #docker-kodi-nvidia
 
+Important: This branch installs nvidia-driver 340.65 which is shipped with debian:jessie. The driver depends on the driver version of the Docker HOST!
+
 Based on the work of [https://github.com/thewtex/docker-opengl-nvidia]
 
 Builds a Docker image that allows sharing the local X display for graphical
